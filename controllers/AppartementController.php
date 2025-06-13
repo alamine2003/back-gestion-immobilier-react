@@ -51,7 +51,8 @@ class AppartementController {
             empty($data['batiment_id'])) {
                 return 'Données invalides : vérifiez les champs.';
         }
-        return $this->update($id, $data);
+       return $this->appartement->update($id, $data); // ✅ Bon
+
     }
 
     /**
